@@ -2,6 +2,8 @@
 
 Варіант роботи - **1**
 
+Роботу виконав студент групи КІУКІ-19-7 Цуканов Єгор. 
+
 # Screenshots
 
 ![Main Page 1](/screenshots/main_page_1.png)
