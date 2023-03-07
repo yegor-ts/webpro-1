@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Web-Programming 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      main {
+        display: flex;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+      th {
+        border: 1px solid;
+        padding: 10px;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About my blog</a></li>
+          <li><a href="#">About me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <article id="post">
+          <h2>Post 1</h2>
+          <p>
+            Hey, this is my <b>first</b> post. I'd like to tell you about myself
+            <br />
+            and my life...
+          </p>
+        </article>
+        <article>
+          <h2>Post 2</h2>
+          <p>
+            In my second post I'd like to tell you about my hobbies and <br />
+            about university where I study <i>Computer Engineering</i>...
+          </p>
+        </article>
+        <div id="text">
+          <h1>Оформлений текст</h1>
+          <p>
+            Для будь-якого натурального числа <b>n>2</b><br />
+            рівняння <i>a<sup>n</sup>+b<sup>n</sup>=c<sup>n</sup></i
+            ><b> не має рішень</b> при <br />цілих ненульових числах a, b, c.
+          </p>
+        </div>
+        <div id="university">
+          <h1>Структура Університету</h1>
+          <ol>
+            <li>Комп'ютерна інженерія та управління</li>
+            <ul>
+              <li>
+                Кафедра автоматизації проектування обчислювальної техніки (АПОТ)
+              </li>
+              <li>Кафедра електронних обчислювальних машин (ЕОМ)</li>
+            </ul>
+            <li>Комп'ютерні науки</li>
+            <ul>
+              <li>Кафедра штучного інтелекту (ШІ)</li>
+              <li>Кафедра програмної інженерії (ПІ)</li>
+            </ul>
+            <li>Автоматика і комп'ютерізовані технології</li>
+            <ul>
+              <li>
+                Кафедра проектування та експлуатації електронних апаратів (ПЕЕА)
+              </li>
+              <li>
+                Кафедра комп’ютерно-інтегрованих технологій, автоматизації та
+                мехатроніки (КІТАМ)
+              </li>
+            </ul>
+            <li>Інфокомунікації</li>
+            <ul>
+              <li>Кафедра інформаційно-мережної інженерії (ІМІ)</li>
+              <li>Кафедра інформаційно-вимірювальних технологій (ІВТ)</li>
+            </ul>
+            <li>Електронна та біомедична інженерія</li>
+            <ul>
+              <li>Кафедра Біомедичної інженерії (БМІ)</li>
+              <li>
+                Кафедра мікроелектроніки, електронних приладів та пристроїв
+                (МЕЕПП)
+              </li>
+            </ul>
+          </ol>
+        </div>
+        <div id="exchange">
+          <h1>Курси Валют</h1>
+          <p><i>Станом на 7.03.2023</i></p>
+          <table>
+            <tbody>
+              <tr>
+                <th>Валюта</th>
+                <th>UAH</th>
+                <th>USD</th>
+                <th>EUR</th>
+                <th>GBP</th>
+              </tr>
+              <tr>
+                <th>UAH</th>
+                <th>1</th>
+                <th>36,92</th>
+                <th>39,07</th>
+                <th>43,08</th>
+              </tr>
+              <tr>
+                <th>USD</th>
+                <th>0,027</th>
+                <th>1</th>
+                <th>1,06</th>
+                <th>1,19</th>
+              </tr>
+              <tr>
+                <th>EUR</th>
+                <th>0,026</th>
+                <th>0,94</th>
+                <th>1</th>
+                <th>1,12</th>
+              </tr>
+              <tr>
+                <th>GBP</th>
+                <th>0,023</th>
+                <th>0,84</th>
+                <th>0,89</th>
+                <th>1</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="poll">
+          <h1>Голосування</h1>
+          <form action="/" method="post">
+            <fieldset>
+              <legend>Проголосуйте за ваш улюблений розділ:</legend>
+              <label for="decorated-text">
+                <input
+                  type="radio"
+                  id="decorated-text"
+                  name="section"
+                  value="decorated-text"
+                />
+                Оформлений текст </label
+              ><br />
+              <label for="university-structure">
+                <input
+                  type="radio"
+                  id="university-structure"
+                  name="section"
+                  value="university-structure"
+                />
+                Структура Університету </label
+              ><br />
+              <label for="exchange-rates">
+                <input
+                  type="radio"
+                  id="exchange-rates"
+                  name="section"
+                  value="exchange-rates"
+                />
+                Курси Валют </label
+              ><br />
+              <label for="posts">
+                <input type="radio" id="posts" name="section" value="posts" />
+                Пости </label
+              ><br />
+              <input type="submit" value="Проголосувати" />
+            </fieldset>
+          </form>
+        </div>
+        <div>
+          <h1>Пошук по розділам</h1>
+          <ul>
+            <li><a href="#post">Пости</a></li>
+            <li><a href="#text">Оформленний текст</a></li>
+            <li><a href="#university">Структура Університету</a></li>
+            <li><a href="#exchange">Курси Валют</a></li>
+            <li><a href="#poll">Голосування</a></li>
+          </ul>
+        </div>
+      </div>
+      <aside>
+        <h2>Пошук</h2>
+        <form>
+          <input type="text" id="search" name="search" />
+          <input type="submit" value="Підтвердити" />
+        </form>
+        <nav>
+          <ul>
+            <li><a href="#">Посилання 1</a></li>
+            <li><a href="#">Посилання 2</a></li>
+            <li><a href="#">Посилання 3</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; Created by Yegor Tsukanov</p>
+    </footer>
+  </body>
+</html>
